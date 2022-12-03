@@ -7,10 +7,11 @@
     <title>Night Mode [ Jquery ]</title>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <nav>
             <div class="logo">
                 <p><span>LO</span><span>GO</span></p>
@@ -30,21 +31,30 @@
 
     <main>
         <section class="hero">
-            <figure>
+            <figure data-aos="fade-up">
                 <img src="./assets/image/Lemonade_Isometric.svg" alt="Hero Img">
             </figure>
             <div class="hero-content">
-                <h1>Best <span>Lemonade</span></h1>
-                <p>
+                <h1 data-aos="fade-left">Best <span>Lemonade</span></h1>
+                <p data-aos="fade-right">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quis tenetur laborum repellat harum distinctio dignissimos, quam cum facere consequatur. Cumque, nesciunt eius! Cumque dicta consectetur labore doloribus, similique quidem doloremque laudantium beatae nobis odit cupiditate commodi eaque accusamus quos, autem facere iusto! Fugiat possimus ab consectetur aliquid exercitationem. Ab magni veniam ullam commodi explicabo sapiente perspiciatis pariatur inventore alias recusandae vitae, saepe voluptate eius, nemo, fuga nobis impedit. Quibusdam architecto excepturi aliquid at consequatur, facere iste cum est reprehenderit.
                 </p>
-                <a href="#">Get Started</a>
+                <a href="#" data-aos="fade-left">Get Started</a>
             </div>
         </section>
     </main>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/jquery_main.js"></script>
+    <script>
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+          delay: 100,
+        });
+      </script>
 </body>
 </html>
